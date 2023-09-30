@@ -1,0 +1,14 @@
+.super_form{
+    background-color:yellow;
+    box-shadow:inherit;
+    border-color: blueviolet;
+    font-style: italic;
+    box-sizing: border-box;
+}
+.Displayer{
+ background-color:blue;
+ box-shadow:inherit;
+ border-color: blueviolet;
+ font-style: italic;
+ box-sizing: border-box;
+}
