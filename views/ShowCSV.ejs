@@ -1,0 +1,14 @@
+<%- include("header")%>
+<body>
+    <div class="Displayer">
+    <%practice.forEach(function(prac1){%>
+        <p><n><%= prac1.name%></p>
+        <%})%>
+    </div>
+    <form action="/DeleteCSV" method="post">
+        <button type="submit">Press here to delete last record</button>
+    </form>
+    <form action="/NewCSV" method="post">
+        <button type="submit">Upload new csv</button>
+    </form>
+</body>
