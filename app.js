@@ -20,7 +20,7 @@ app.listen(5000,function(req,res){
 
 let storage=multer.diskStorage({
     destination:(req,file,callback)=>{
-        callback(null,"./uploads/")
+        callback(null,"./upload/")
     },
     filename:(req,file,callback)=>
     {
@@ -39,9 +39,9 @@ app.get("/",function(req,res){
 let Starter1=[]
 
 app.post("/Starter",upload.single('i'),function(req,res){
-     uploadCSV(__dirname +"/uploads/"+req.file.filename)
+     uploadCSV(__dirname +"/upload/"+req.file.filename)
      console.log(user.name)
-     console.log(__dirname +"/uploads/"+req.file.filename)
+     console.log(__dirname +"/upload/"+req.file.filename)
      res.redirect("ShowCSV")
      Starter1+=req.file.filename
 })
@@ -76,7 +76,7 @@ app.get("/ShowCSV",async function(req,res){
 })
 
  app.post("/DeleteCSV",function(req,res){
-    delCSV(__dirname +"/uploads/"+Starter1)
+    delCSV(__dirname +"/upload/"+Starter1)
     res.redirect("/")
 })
 
