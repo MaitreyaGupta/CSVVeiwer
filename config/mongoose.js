@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-mongoose.connect("mongodb+srv://maitreyaguptaa:killerman@devs.syeiknh.mongodb.net/NewCSVSaver",{useNewUrlParser:true,useUnifiedTopology:true})
+mongoose.connect(" mongodb+srv://Maitreya:KillerMan@cluster0.sk6ugig.mongodb.net/CSVStarter",{useNewUrlParser:true,useUnifiedTopology:true})
 const db=mongoose.connection
 
 db.once("open",function(req,res){
